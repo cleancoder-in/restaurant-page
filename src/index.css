@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #900c3f;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-size: 36px;
+}
+
+/* home styles */
+.home-div {
+  width: 100%;
+  height: auto;
+  background-image: url(./images/red-bamboo-bgImage.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 30px;
+}
+
+.home-div .card-div {
+  width: 60%;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-div .card-div .cardImg-div {
+  width: 18.75rem;
+  height: 20.3rem;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+}
+
+.home-div .card-div .cardImg-div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-div .card-div p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #dfdfdf;
+  letter-spacing: 1.2px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.home-div .card-div .btn {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 10px 30px;
+  background-color: rgb(218, 165, 32);
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 6px rgb(0 0 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-div .card-div .btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
