@@ -15,7 +15,7 @@ function createAbout() {
 
   const sectionTwo = createSection(
     "GLOBAL CUISINE",
-    "Every year we add new vegan dishes from around the word. Newest dishes include: Portobello Fritters, Salmon Teriyaki, Pasta Carbonara, Rigatoni Bolognese, Caesar, Greek and Cobb Salad"
+    "Every year we add new vegan dishes from around the word. Newest dishes include: Portobello Fritters, Salmon Teriyaki, Pasta Carbonara, Rigatoni Bolognese, Caesar, Greek and Cobb Salad."
   );
 
   aboutPage.append(sectionOne, sectionTwo);

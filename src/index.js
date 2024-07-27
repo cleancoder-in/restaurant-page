@@ -1,5 +1,4 @@
 import "./index.css";
-import home from "./components/home.js";
+import initWebsite from "./components/initWebsite.js";
 
-const mainContentDiv = document.getElementById("content");
-mainContentDiv.appendChild(home());
+initWebsite();

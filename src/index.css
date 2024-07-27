@@ -10,12 +10,52 @@ body {
   line-height: 1.6;
 }
 
+/* common styles */
+
 h1 {
   color: #52071b;
   text-align: center;
   text-transform: capitalize;
   text-decoration: underline;
   font-size: 36px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.contact-info p {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact-info p span {
+  display: inline-block;
+  width: 12px;
+}
+
+.contact-social {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-social p {
+  display: inline-block;
+  width: 17px;
+}
+
+.contact-social p:hover {
+  cursor: pointer;
+  fill: #52071b;
+  transform: scale(1.1);
 }
 
 /*************** header styles ***************/
@@ -30,18 +70,6 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header nav .logo {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-}
-
-header nav .logo img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 3px;
 }
 
 header nav .btn-tab {
@@ -132,8 +160,7 @@ header nav .btn-tab .nav-btn.active {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.9);
   padding: 10px;
 }
@@ -207,7 +234,7 @@ header nav .btn-tab .nav-btn.active {
   background-image: url(./images/about-pg-img2.jpg);
 }
 
-/****************** contact page styles **************/
+/****************** contact page styles *****************/
 
 .contact-page .section {
   display: flex;
@@ -233,7 +260,7 @@ header nav .btn-tab .nav-btn.active {
 }
 
 .contact-page .section .text-box .pTitle {
-  color: #52071b;
+  color: rgb(82, 7, 27);
   text-decoration: underline;
   text-transform: uppercase;
   font-size: 18px;
@@ -267,18 +294,40 @@ header nav .btn-tab .nav-btn.active {
   gap: 20px;
 }
 
-.contact-page .section .text-box .contact-social {
+/******************* footer styles *****************/
+
+footer .primary-footer {
+  padding: 40px;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #dedede;
 }
 
-.contact-page .section .text-box .contact-social p {
+footer .primary-footer .logo {
+  mix-blend-mode: multiply;
+}
+
+footer .secondary-footer {
+  background-color: #52071b;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+footer .secondary-footer p a {
+  margin-left: 10px;
+}
+footer .secondary-footer p a span {
   display: inline-block;
-  width: 17px;
+  width: 18px;
+  fill: #fff;
+  transition: transform 0.3s ease-in-out;
 }
 
-.contact-page .section .text-box .contact-social p:hover {
+footer .secondary-footer p a span:hover {
   cursor: pointer;
-  fill: #52071b;
   transform: scale(1.1);
 }

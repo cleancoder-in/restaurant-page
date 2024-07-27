@@ -1,7 +1,13 @@
-import BackgroundImage from "../images/red-bamboo-bgImage.jpeg";
 import CardImg from "../images/red-bamboo-logo.jpeg";
+import renderMenu from "./menu.js";
 
-function home() {
+function renderHome() {
+  const mainContent = document.getElementById("content");
+  mainContent.textContent = "";
+  mainContent.appendChild(createHome());
+}
+
+function createHome() {
   const homeDiv = document.createElement("div");
   homeDiv.classList.add("home-div");
 
@@ -24,6 +30,7 @@ function home() {
   const btn = document.createElement("button");
   btn.classList.add("btn");
   btn.textContent = "Explore!";
+  btn.onclick = renderMenu;
 
   cardImgDiv.appendChild(cardImg);
   cardDiv.append(h1, cardImgDiv, p, btn);
@@ -32,4 +39,4 @@ function home() {
   return homeDiv;
 }
 
-export default home;
+export default renderHome;

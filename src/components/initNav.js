@@ -87,3 +87,4 @@ function setCurrentTabActive(clickedBtn) {
 }
 
 export default createNav;
+export { createLogo };
